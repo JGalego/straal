@@ -15,7 +15,7 @@ $ npm install --save straal
 
     const XrayApi = require('straal').XrayApi;
 
-    var xray = new XrayApi('http', config.host, config.port, config.user, config.password, '1.0');
+    var xray = new XrayApi('http', host, port, user, password, '1.0');
 
 ### Get Issue Information ###
 
