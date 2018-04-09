@@ -15,6 +15,7 @@ $ npm install --save straal
 * Create Test Execution
 * Create Test Plan
 * Create Test Set
+* Create Test
 * Import Test Results to JIRA 
     * JUnit XML
 * Export test results from JIRA
