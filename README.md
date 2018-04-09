@@ -50,11 +50,13 @@ $ npm install --save straal
 
 * Get Project Info
 * Get Issue Info
+* Get Test Run Info
 * Create Test Execution
 * Create Test Plan
 * Create Test Set
 * Create Test
 * Save Test Run
+* Add Evidence to Test Run
 * Import Test Results to JIRA
     * JSON Format
     * JUnit XML
