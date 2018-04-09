@@ -9,13 +9,31 @@
 $ npm install --save straal
 ```
 
+## Examples
+
+### Create Xray Client ###
+
+    const XrayApi = require('straal').XrayApi;
+
+    var xray = new XrayApi('http', config.host, config.port, config.user, config.password, '1.0');
+
+### Get Issue Information ###
+
+    xray.getIssueInfo(issueIdOrKey, function(error, issue) {
+        if(!error){
+            console.log('Issue ID: ' + issue.id);
+        }
+    })
+
 ## Supported Actions
 
 * Get Project Info
+* Get Issue Info
 * Create Test Execution
 * Create Test Plan
 * Create Test Set
 * Create Test
+* Save Test Run
 * Import Test Results to JIRA
     * JSON Format
     * JUnit XML
