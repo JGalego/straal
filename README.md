@@ -1,4 +1,4 @@
-# straal [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# straal [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Wrapper for <a href="https://marketplace.atlassian.com/plugins/com.xpandit.plugins.xray/server/overview">Xray</a>&#39;s REST API
 
 <img src="https://github.com/JGalego/straal/blob/master/radiation.png?raw=true" width="200"/>
