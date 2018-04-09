@@ -29,7 +29,6 @@ $ npm install --save straal
 
     const ZonedDateTime = require('js-joda').ZonedDateTime;
     const ChronoUnit = require('js-joda').ChronoUnit;
-    const XrayApi = require('../index.js').XrayApi;
 
     function now() {
         return ZonedDateTime.now().withFixedOffsetZone().truncatedTo(ChronoUnit.SECONDS).toString();
