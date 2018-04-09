@@ -21,6 +21,11 @@ $ npm install --save straal
     * JUnit XML
 * Export test results from JIRA
 
+## References
+
+* <a href="https://confluence.xpand-addons.com/display/XRAY/REST+API">Xray's REST API</a>
+* <a href="https://developer.atlassian.com/server/jira/platform/rest-apis/">JIRA's REST API</a>
+
 ## License
 
 MIT License © [João Galego]()
