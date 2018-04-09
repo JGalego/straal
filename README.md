@@ -25,6 +25,28 @@ $ npm install --save straal
         }
     })
 
+### Save Test Run ###
+
+    const ZonedDateTime = require('js-joda').ZonedDateTime;
+    const ChronoUnit = require('js-joda').ChronoUnit;
+    const XrayApi = require('../index.js').XrayApi;
+
+    function now() {
+        return ZonedDateTime.now().withFixedOffsetZone().truncatedTo(ChronoUnit.SECONDS).toString();
+    }
+
+    var startDate = now();
+
+    // perform test steps
+
+    var finishDate = now();
+
+    xray.saveTestRun(testExecutionKey, testKey, startDate, finishDate, status, comment, function(error, issue) {
+        if(!error) {
+            console.log('Test Exec Issue: ' + issue.testExecIssue.self);
+        }
+    });
+
 ## Supported Actions
 
 * Get Project Info

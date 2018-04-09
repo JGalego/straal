@@ -30,7 +30,8 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-config-xo": "^0.20.1",
-    "jest": "^22.0.6"
+    "jest": "^22.0.6",
+    "js-joda": "^1.8.2" 
   },
   "engines": {
     "npm": ">= 4.0.0"
