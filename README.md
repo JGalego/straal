@@ -61,6 +61,7 @@ $ npm install --save straal
     * JSON Format
     * JUnit XML
 * Export test results from JIRA
+* Run JQL queries
 
 ## References
 
