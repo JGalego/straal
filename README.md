@@ -54,21 +54,21 @@ xray.saveTestRun(testExecutionKey, testKey, startDate, finishDate, status, comme
 
 ## Supported Actions
 
-* Get Project Info (GET, /rest/api/2/project)
-* Get Issue Info (GET, /rest/api/2/issue)
-* Get Test Run Info (GET, rest/raven/1.0/api/testrun)
-* Create Xray Issues (POST, /rest/api/2/issue)
+* Get Project Info (/rest/api/2/project)
+* Get Issue Info (/rest/api/2/issue)
+* Get Test Run Info (rest/raven/1.0/api/testrun)
+* Create Xray Issues (/rest/api/2/issue)
     * Test
     * Test Set
     * Test Plan
     * Test Execution
-* Save Test Run (POST, /rest/raven/1.0/import/execution)
-* Add Evidence to Test Run (POST, /rest/raven/1.0/api/testrun/<TEST_RUN_ID>/attachment)
+* Save Test Run (/rest/raven/1.0/import/execution)
+* Add Evidence to Test Run (/rest/raven/1.0/api/testrun/<TEST_RUN_ID>/attachment)
 * Import Test Results to JIRA
-    * JSON Format (POST, /rest/raven/1.0/import/execution)
-    * JUnit XML (POST, /rest/raven/1.0/import/execution/junit)
-* Export test results from JIRA (GET, /rest/raven/1.0/testruns)
-* Run JQL queries (GET, /rest/api/2/search)
+    * JSON Format (/rest/raven/1.0/import/execution)
+    * JUnit XML (/rest/raven/1.0/import/execution/junit)
+* Export test results from JIRA (/rest/raven/1.0/testruns)
+* Run JQL queries (/rest/api/2/search)
 
 ## References
 
