@@ -14,42 +14,42 @@ $ npm install --save straal
 ### Create Xray Client ###
 
 ```js
-    const XrayApi = require('straal').XrayApi;
+const XrayApi = require('straal').XrayApi;
 
-    var xray = new XrayApi('http', host, port, user, password, '1.0');
+var xray = new XrayApi('http', host, port, user, password, '1.0');
 ```
 
 ### Get Issue Information ###
 
 ```js
-    xray.getIssueInfo(issueIdOrKey, function(error, issue) {
-        if(!error){
-            console.log('Issue ID: ' + issue.id);
-        }
-    })
+xray.getIssueInfo(issueIdOrKey, function(error, issue) {
+    if(!error){
+        console.log('Issue ID: ' + issue.id);
+    }
+})
 ```
 
 ### Save Test Run ###
 
 ```js
-    const ZonedDateTime = require('js-joda').ZonedDateTime;
-    const ChronoUnit = require('js-joda').ChronoUnit;
+const ZonedDateTime = require('js-joda').ZonedDateTime;
+const ChronoUnit = require('js-joda').ChronoUnit;
 
-    function now() {
-        return ZonedDateTime.now().withFixedOffsetZone().truncatedTo(ChronoUnit.SECONDS).toString();
+function now() {
+    return ZonedDateTime.now().withFixedOffsetZone().truncatedTo(ChronoUnit.SECONDS).toString();
+}
+
+var startDate = now();
+
+// perform test steps
+
+var finishDate = now();
+
+xray.saveTestRun(testExecutionKey, testKey, startDate, finishDate, status, comment, function(error, issue) {
+    if(!error) {
+        console.log('Test Exec Issue: ' + issue.testExecIssue.self);
     }
-
-    var startDate = now();
-
-    // perform test steps
-
-    var finishDate = now();
-
-    xray.saveTestRun(testExecutionKey, testKey, startDate, finishDate, status, comment, function(error, issue) {
-        if(!error) {
-            console.log('Test Exec Issue: ' + issue.testExecIssue.self);
-        }
-    });
+});
 ```
 
 ## Supported Actions
