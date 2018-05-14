@@ -1,0 +1,16 @@
+{
+	"default_values": {
+		"test_testType": "Generic"
+	},
+	"custom_fields": {
+		"test_genericTestDefinition": "customfield_11003",
+		"test_testSetsAssociation": "customfield_11007",
+		"test_testPlansAssociation": "customfield_11009",
+		"test_testType": "customfield_11000",
+		"testExecution_beginDate": "customfield_11016",
+		"testExecution_testEnvironment": "customfield_11024",
+		"testExecution_testPlans": "customfield_11026",
+		"testExecution_endDate": "customfield_11017",
+		"testPlan_testsAssociation": "customfield_11025"
+	}
+}
