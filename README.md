@@ -52,6 +52,16 @@ xray.saveTestRun(testExecutionKey, testKey, startDate, finishDate, status, comme
 });
 ```
 
+### Import JUnit Test Results ###
+
+```js
+xray.importJUnitResults('test_report.xml', projectKey, testPlanKey, function(error, result) {
+    if(!error) {
+        console.log(result);
+    }
+});
+```
+
 ## Supported Actions
 
 * Get Project Info (/rest/api/2/project)
